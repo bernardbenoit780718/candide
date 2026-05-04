@@ -3,9 +3,29 @@
 
 <text>
   <body>
-    <div>
-      <head>CHAPITRE SECOND</head>
-      <p>Candide chassé du Paradis terrestre...</p>
+    <div type="chapitre" n="2">
+
+      <head>CHAPITRE SECOND.</head>
+      <head>Ce que devint Candide parmi-les Bulgares.</head>
+
+      <p>
+        Candide chaffé du Paradis ter<lb/>
+        reftre, marcha longtems fans<lb/>
+        favoir où, pleurant, levant les<lb/>
+        yeux au Ciel, les tournant fou-<lb/>
+        vent vers le plus beau des Chå-<lb/>
+        teaux qui renfermait la plus bel-<lb/>
+        le des Baronnettes; il fe coucha<lb/>
+        fans fouper au milieu des champs<lb/>
+        entre deux fillons, la neige tom-<lb/>
+        bait à gros flocons. Candide tout<lb/>
+        tranfi fe traina le lendemain vers<lb/>
+        la Ville voifine, qui s'appelle<lb/>
+        Waldberghoff-trarbk-dikdorff,<lb/>
+        n'ayant point d'argent, mou-<lb/>
+        rant
+      </p>
+
     </div>
   </body>
 </text>
