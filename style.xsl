@@ -5,21 +5,22 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template match="/">
   <html>
-    <body style="font-family: serif; margin: 40px;">
+    <body style="font-family: serif; margin: 50px;">
 
-      <h1><xsl:value-of select="//head[1]"/></h1>
-      <h2><xsl:value-of select="//head[2]"/></h2>
+      <h1 style="text-align:center;">
+        <xsl:value-of select="//head[1]"/>
+      </h1>
 
-      <xsl:apply-templates select="//p"/>
+      <h2 style="text-align:center; font-style: italic;">
+        <xsl:value-of select="//head[2]"/>
+      </h2>
+
+      <p style="width:400px; text-align: justify;">
+        <xsl:apply-templates select="//p/node()"/>
+      </p>
 
     </body>
   </html>
-</xsl:template>
-
-<xsl:template match="p">
-  <p>
-    <xsl:apply-templates/>
-  </p>
 </xsl:template>
 
 <xsl:template match="lb">
