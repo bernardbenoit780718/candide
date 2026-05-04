@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="style.xsl"?>
 
-<text>
-  <body>
-    <div type="chapitre" n="2">
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-      <head>CHAPITRE SECOND.</head>
-      <head>Ce que devint Candide parmi-les Bulgares.</head>
+<xsl:template match="/">
+  <html>
+    <body style="font-family: serif; margin: 50px;">
 
-      <p>
-        Candide chaffé du Paradis ter<lb/>
-        reftre, marcha longtems fans<lb/>
-        favoir où, pleurant, levant les<lb/>
-        yeux au Ciel, les tournant fou-<lb/>
-        vent vers le plus beau des Chå-<lb/>
-        teaux qui renfermait la plus bel-<lb/>
-        le des Baronnettes; il fe coucha<lb/>
-        fans fouper au milieu des champs<lb/>
-        entre deux fillons, la neige tom-<lb/>
-        bait à gros flocons. Candide tout<lb/>
-        tranfi fe traina le lendemain vers<lb/>
-        la Ville voifine, qui s'appelle<lb/>
-        Waldberghoff-trarbk-dikdorff,<lb/>
-        n'ayant point d'argent, mou-<lb/>
-        rant
+      <h1 style="text-align:center;">
+        <xsl:value-of select="//head[1]"/>
+      </h1>
+
+      <h2 style="text-align:center; font-style: italic;">
+        <xsl:value-of select="//head[2]"/>
+      </h2>
+
+      <p style="width:400px; text-align: justify;">
+        <xsl:apply-templates select="//p/node()"/>
       </p>
 
-    </div>
-  </body>
-</text>
+    </body>
+  </html>
+</xsl:template>
+
+<xsl:template match="lb">
+  <br/>
+</xsl:template>
+
+</xsl:stylesheet>
